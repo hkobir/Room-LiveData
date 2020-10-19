@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/semesterNameLabel"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name: "
+    android:textColor="#5E5858"
+    android:textSize="16sp"/>
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/semesterNameTV"
+    app:layout_constraintTop_toTopOf="@+id/semesterNameLabel"
+    app:layout_constraintStart_toEndOf="@+id/semesterNameLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fall 2017"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/semesterCreditLabel"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/semesterNameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit: "
+        android:textColor="#5E5858"
+        android:textSize="16sp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/semesterCreditTV"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/semesterNameTV"
+        app:layout_constraintStart_toEndOf="@+id/semesterCreditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15.0"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resultTV"
+        android:background="@drawable/result_back"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#fff"
+        app:layout_constraintTop_toTopOf="@+id/semesterNameTV"
+        app:layout_constraintBottom_toBottomOf="@+id/semesterCreditTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.00"/>
+    <View
+        android:background="#979595"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/semesterCreditTV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
